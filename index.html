@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/app.css">
 </head>
 
 <body>
@@ -21,8 +22,7 @@
             </div>
             <div class="steps clearfix">
                 <ul class="tablist multisteps-form__progress">
-                    <li class="multisteps-form__progress-btn first done checked js-active current"
-                        aria-selected="false">
+                    <li class="multisteps-form__progress-btn js-active first done checked" aria-selected="false">
                         <span>1</span>
                     </li>
                     <li class="multisteps-form__progress-btn">
@@ -40,10 +40,10 @@
                 </ul>
             </div>
         </div>
-        <form class="multisteps-form__form" action="#" id="wizard" style="height: 850px;" novalidate="novalidate">
+        <form class="multisteps-form__form" action="#" id="wizard" style="height: 857px;">
             <div class="form-area position-relative">
                 <!-- div 1 -->
-                <div class="multisteps-form__panel js-active animate__bounce" data-animation="animate__bounce">
+                <div class="multisteps-form__panel js-active" data-animation="animate__bounce">
                     <div class="wizard-forms">
                         <div class="inner pb-100 clearfix">
                             <div class="form-content pera-content">
@@ -104,11 +104,17 @@
                         </div>
                         <!-- /.inner -->
                         <div class="actions">
-                            <ul>
-                                <li class="disable" aria-disabled="true"><span class="js-btn-next" title="NEXT">Backward
-                                        <i class="fa fa-arrow-right"></i></span></li>
-                                <li><span class="js-btn-next" title="NEXT">التالى <i
-                                            class="fa fa-arrow-left"></i></span></li>
+                            <ul class="d-flex justify-content-center">
+                                <li class="disable" aria-disabled="true">
+                                    <span class="js-btn-next" title="NEXT">Backward
+                                        <i class="fa fa-arrow-right"></i>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="js-btn-next" title="NEXT">التالى
+                                        <i class="fa fa-arrow-left"></i>
+                                    </span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -133,22 +139,19 @@
                                         اتخذها الأب أو قرار مرح أو كرة قدم.</p>
                                     <div class="form-inner-area">
                                         <input type="text" name="full_name" placeholder="الاسم الأول والاسم الأخير"
-                                            required="" class="error"><label id="full_name-error" class="error"
-                                            for="full_name">This field is required.</label>
-                                        <input type="email" name="email" placeholder="عنوان بريد الكتروني" required=""
-                                            class="error"><label id="email-error" class="error" for="email">This field
-                                            is required.</label>
+                                            required="">
+                                        <input type="email" name="email" placeholder="عنوان بريد الكتروني" required="">
                                         <input type="text" name="phone" placeholder="هاتف">
                                     </div>
                                     <div class="gender-selection">
                                         <h3>جنس:</h3>
                                         <label>
-                                            <input type="radio" checked="checked" name="gender" value="Male" required=""
-                                                class="valid">
+                                            <input type="radio" checked="checked" name="gender" value="Male"
+                                                required="">
                                             <span class="checkmark"></span>الذكر
                                         </label>
                                         <label>
-                                            <input type="radio" name="gender" value="Female" required="" class="valid">
+                                            <input type="radio" name="gender" value="Female" required="">
                                             <span class="checkmark"></span>أنثى
                                         </label>
                                     </div>
@@ -173,7 +176,7 @@
                         </div>
                         <!-- /.inner -->
                         <div class="actions">
-                            <ul>
+                            <ul class="d-flex justify-content-center">
                                 <li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-right"></i> الى الوراء
                                     </span></li>
                                 <li><span class="js-btn-next" title="NEXT">NEXT <i class="fa fa-arrow-left"></i></span>
@@ -230,7 +233,7 @@
                         </div>
                         <!-- ./inner -->
                         <div class="actions">
-                            <ul>
+                            <ul class="d-flex justify-content-center">
                                 <li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-right"></i> الى الوراء
                                     </span></li>
                                 <li><span class="js-btn-next" title="NEXT">NEXT <i class="fa fa-arrow-left"></i></span>
@@ -302,7 +305,7 @@
                         </div>
                         <!-- /.inner -->
                         <div class="actions">
-                            <ul>
+                            <ul class="d-flex justify-content-center">
                                 <li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-right"></i> BACK
                                     </span></li>
                                 <li><span class="js-btn-next" title="NEXT">NEXT <i class="fa fa-arrow-left"></i></span>
@@ -368,7 +371,7 @@
                         </div>
                         <!-- /.inner -->
                         <div class="actions">
-                            <ul>
+                            <ul class="d-flex justify-content-center">
                                 <li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-right"></i> BACK
                                     </span></li>
                                 <li><button type="submit" title="NEXT">SUBMIT <i class="fa fa-arrow-left"></i></button>
@@ -382,7 +385,8 @@
     </div>
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/jquery.validate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
